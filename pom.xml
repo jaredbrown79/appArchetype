@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.company.archetype</groupId>
+  <artifactId>appArchetype</artifactId>
+  <version>1.2-SNAPSHOT</version>
+  <name>Archetype - appArchetype</name>
+  <url>http://www.company.com</url>
+
+  <distributionManagement>
+    <repository>
+      <id>MYRA.release</id>
+      <name>MYRA Release Repository</name>
+      <url>http://server.company.com:8090/repository/internal/</url>
+    </repository>
+    <snapshotRepository>
+      <id>MYRA.snapshots</id>
+      <name>MYRA Snapshot Repository</name>
+      <url>http://server.company.com:8090/repository/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>
