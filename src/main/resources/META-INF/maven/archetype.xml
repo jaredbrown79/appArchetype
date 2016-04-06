@@ -1,7 +1,0 @@
-<archetype>
-  <id>appArchetype</id>
-  <resources>
-    <resource>src/main/resources/logback.xml</resource>
-    <resource>src/main/resources/log4jdbc.properties</resource>
-  </resources>
-</archetype>

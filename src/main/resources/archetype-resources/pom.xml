@@ -8,7 +8,7 @@
 
   <parent>
 	<groupId>com.company.parentPOM</groupId>
-	<artifactId>parentTestPOM</artifactId>
+	<artifactId>${artifactId}</artifactId>
     <version>1.0-SNAPSHOT</version>
 	<relativePath></relativePath>
   </parent>
