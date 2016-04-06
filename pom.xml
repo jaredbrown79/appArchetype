@@ -1,23 +1,37 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.company.archetype</groupId>
-  <artifactId>appArchetype</artifactId>
-  <version>1.2-SNAPSHOT</version>
-  <name>Archetype - appArchetype</name>
-  <url>http://www.company.com</url>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.company.archetype</groupId>
+    <artifactId>appArchetype</artifactId>
+    <version>1.2-SNAPSHOT</version>
+    <name>Archetype - appArchetype</name>
+    <url>http://www.company.com</url>
+    <packaging>maven-archetype</packaging>
 
-  <distributionManagement>
-    <repository>
-      <id>MYRA.release</id>
-      <name>MYRA Release Repository</name>
-      <url>http://server.company.com:8090/repository/internal/</url>
-    </repository>
-    <snapshotRepository>
-      <id>MYRA.snapshots</id>
-      <name>MYRA Snapshot Repository</name>
-      <url>http://server.company.com:8090/repository/snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>MYRA.release</id>
+            <name>MYRA Release Repository</name>
+            <url>http://server.company.com:8090/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>MYRA.snapshots</id>
+            <name>MYRA Snapshot Repository</name>
+            <url>http://server.company.com:8090/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <properties>
+        <maven.archetype.version>2.4</maven.archetype.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>${maven.archetype.version}</version>
+            </extension>
+        </extensions>
+    </build>
 </project>
